@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h2 align="center">
+        <font color="1D4EB5">Cadastro</font>
+    </h2>
+    <hr>
+    <form action="http://terra.planetarium.com.br/cgi-bin/processform.cgi" name="cadastro" id="cadastro">
+        <table width="350" border="0" align="center">
+            <input type="hidden" id="TO" value="emaill@provedor.com.br">
+            <input type="hidden" id="FROM" value="informações do Remetente">
+        <input type="hidden" id="SUBJECT" value="Assunto do email">
+    <tr>
+        <td width="56">Nome:</td>
+        <td width="225">
+            <input type="text" name="nome" id="nome">
+        </td>
+    </tr>
+    <tr>
+        <td>E-mail</td>
+        <td>
+            <input type="text" name="email" id="email">
+        </td>
+    </tr>
+    <tr>
+        <td>Sexo</td>
+        <td>
+            <input type="radio" name="radio" id="sexo" value="sexo">F
+            <input type="radio" name="radio" id="sexo" value="sexo">M
+        </td>
+    </tr>
+    <tr>
+        <td>Foto do perfil:</td>
+        <td>
+            <input type="file" name="anexar">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><p>Sugestões: <br>
+        <textarea name="sgts" id="sgts" cols="35" rows="5"></textarea>
+    </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"> 
+            <input type="submit" name="enviar" id="enviar" value="cadastro">
+            <input type="submit" name="cancelar" id="cancelar" value="cancelar" >
+        </td>
+    </tr>
+        </table>
+    </form>
+</body>
+</html>
